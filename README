@@ -1,0 +1,14 @@
+LightningTest
+=============
+
+More ruby-like syntax for unit testing.
+
+creates_model MyModel, :attr1 => 'asdf' do
+	# run some code that should create the model
+end
+
+And for functional testing
+
+finds_model MyModel do
+	request :get, '/my/path'
+end
